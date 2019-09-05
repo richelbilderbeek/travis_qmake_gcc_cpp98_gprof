@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 language: generic
 dist: bionic
+=======
+language: cpp
+dist: bionic
+compiler: gcc
+>>>>>>> develop
 
-install:
+install: 
+  - sudo apt update -qq
+  # Boost
+  - sudo apt install -qq libboost-all-dev
   # Check dead links
   - sudo apt-get install -qq npm
   - npm config set strict-ssl false
